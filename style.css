@@ -2065,3 +2065,42 @@ footer {
   }
 
 }
+/* =========================================
+   REAL PRODUCT IMAGES
+========================================= */
+
+.real-product-image {
+  display: block;
+  width: 100%;
+  max-width: 190px;
+  height: 220px;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(
+    0 16px 18px rgba(0, 0, 0, 0.16)
+  );
+}
+
+.product-image {
+  overflow: hidden;
+}
+
+@media (max-width: 580px) {
+  .real-product-image {
+    max-width: 150px;
+    height: 185px;
+  }
+}
+
+
+/* Hide floating call button on desktop.
+   Your navigation already has Call Store. */
+
+@media (min-width: 821px) {
+  .floating-call {
+    display: none !important;
+  }
+}
